@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ali's protofolio</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1 class="purple logo-name">Ali Husnain</h1>
+      </div>
+
+      <div class="links">
+        <!-- <a href="#about" class="link">About</a> -->
+        <a id="link-skill" class="link">Skills</a>
+        <a id="link-project" class="link">Project</a>
+        <a id="link-contact" class="link">Contact</a>
+      </div>
+      <div class="hamburger"></div>
+    </div>
+    <!--           Section-1                   -->
+    <div class="section-1" id="about">
+      <div class="left-section-1">
+        <h1>Hi👋, My name is <span class="purple">Ali</span></h1>
+        <div>and I am a Passionate</div>
+        <!-- Element to contain animated typing -->
+        <span id="element" class="purple"></span>
+        <div class="resume-holder">
+          <a href="/Ali Husnain_Web Developer.pdf" target="_blank"
+            ><button class="btn">Resume</button></a
+          >
+        </div>
+        <div class="link-holder">
+          <a href="http://www.linkedin.com/in/alihusnainmalik" target="_blank"
+            ><button class="btn btn-link">Visit LinkedIn</button></a
+          >
+          <a href="https://github.com/alihusnain010203" target="_blank"
+            ><button class="btn btn-link">Visit Github</button></a
+          >
+        </div>
+      </div>
+      <div class="right-section-1">
+        <img src="/1.png" class="img" />
+      </div>
+    </div>
+
+    <!--             section-2                 -->
+    <div class="section-2" id="skills">
+      <div class="left-section-2">
+        <img class="img" src="/2.png" alt="" />
+      </div>
+      <div class="right-section-2">
+        <h1 class="purple">Skills ❄</h1>
+        <div class="skill-holder">
+          <h3>React js</h3>
+          <h3>Node js</h3>
+          <h3>Express js</h3>
+          <h3>Mongo DB</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--             section-3                   -->
+    <div class="section-3" id="section-project">
+      <h1 class="heading purple">Projects 👨‍💻</h1>
+      <div class="section-3-projects" id="projects"></div>
+    </div>
+
+    <!-- section-4 -->
+    <footer class="footer" id="Contact">
+      <h1 class="heading purple">Contact Me🔰</h1>
+      <div class="footer-content">
+        <div class="contact-info">
+          <a href="tel:YOUR_PHONE_NUMBER"
+            ><span class="purple">Phone 📞: </span> +923174190289</a
+          >
+          <a href="mailto:YOUR_EMAIL_ADDRESS">
+            <span class="purple">Email 💬: </span
+            >ali.husnain.010203@gmail.com</a
+          >
+        </div>
+        <div class="social-links">
+          <a href="http://www.linkedin.com/in/alihusnainmalik" target="_blank"
+            ><button class="btn btn-link">LinkedIn</button>
+          </a>
+          <a href="https://github.com/alihusnain010203" target="_blank"
+            ><button class="btn btn-link">Github</button>
+          </a>
+          <p>Copyright claim© <span class="purple">Ali's</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script to animated element -->
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer💻','React Developer☸','Node js','MERN Stack Developer💻'],
+      typeSpeed: 50,
+    });
+  </script>
+  </body>
+  <!-- Connect Javascript -->
+  <script src="/script.js"></script>
+</html>
